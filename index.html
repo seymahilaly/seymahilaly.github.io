@@ -1,10 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-  <title>Seyma Hilaly</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seyma Hilaly | Portfolyo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1>Merhaba, ben Seyma</h1>
-  <p>Portfolyoma hoş geldiniz.</p>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+    <h1 class="text-5xl md:text-6xl font-bold mb-6">
+      Merhaba, ben <span class="text-indigo-600">Seyma</span>
+    </h1>
+    <p class="text-lg md:text-xl text-gray-600 max-w-xl mb-8">
+      Frontend Developer | Modern ve kullanıcı odaklı web arayüzleri geliştiriyorum.
+    </p>
+    <a href="#projects" class="bg-indigo-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-indigo-700 transition">
+      Projelerimi Gör
+    </a>
+  </section>
+
+  <!-- About -->
+  <section class="py-20 bg-white text-center px-6">
+    <h2 class="text-3xl font-bold mb-6">Hakkımda</h2>
+    <p class="max-w-2xl mx-auto text-gray-600 leading-relaxed">
+      Web geliştirme alanında kendimi sürekli geliştiriyorum. 
+      React, HTML, CSS ve modern UI tasarımlar üzerine çalışıyorum.
+      Amacım estetik ve performanslı projeler üretmek.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 bg-gray-100 px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">Projelerim</h2>
+    
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-3">Proje 1</h3>
+        <p class="text-gray-600 mb-4">
+          React ile yapılmış modern bir web uygulaması.
+        </p>
+        <a href="#" class="text-indigo-600 font-medium">GitHub →</a>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-3">Proje 2</h3>
+        <p class="text-gray-600 mb-4">
+          Responsive tasarıma sahip landing page.
+        </p>
+        <a href="#" class="text-indigo-600 font-medium">GitHub →</a>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-3">Proje 3</h3>
+        <p class="text-gray-600 mb-4">
+          API entegrasyonu yapılan bir dashboard uygulaması.
+        </p>
+        <a href="#" class="text-indigo-600 font-medium">GitHub →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="py-20 bg-white text-center px-6">
+    <h2 class="text-3xl font-bold mb-6">İletişim</h2>
+    <p class="text-gray-600 mb-4">
+      Benimle iletişime geçmek için:
+    </p>
+    <p class="font-medium">email@example.com</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-gray-900 text-white text-center">
+    © 2026 Seyma Hilaly
+  </footer>
+
 </body>
 </html>
