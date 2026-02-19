@@ -1,82 +1,132 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Seyma Hilaly | Portfolyo</title>
+  <title>Şeyma Hilal Yeşildal | Computer Engineer</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
-<body class="bg-gray-50 text-gray-800">
 
-  <!-- Hero Section -->
-  <section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
-    <h1 class="text-5xl md:text-6xl font-bold mb-6">
-      Merhaba, ben <span class="text-indigo-600">Seyma</span>
-    </h1>
-    <p class="text-lg md:text-xl text-gray-600 max-w-xl mb-8">
-      Frontend Developer | Modern ve kullanıcı odaklı web arayüzleri geliştiriyorum.
-    </p>
-    <a href="#projects" class="bg-indigo-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-indigo-700 transition">
-      Projelerimi Gör
+<body class="bg-gray-50 text-gray-800 transition duration-300">
+
+<!-- NAVBAR -->
+<nav class="flex justify-between items-center p-6 max-w-6xl mx-auto">
+  <h1 class="text-xl font-bold">Şeyma Hilal Yeşildal</h1>
+  <div class="flex items-center gap-6">
+    <a href="#projects" class="hover:text-indigo-600">Projeler</a>
+    <a href="#contact" class="hover:text-indigo-600">İletişim</a>
+    <button onclick="toggleDark()">🌙</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+
+  <img src="profil.jpg"
+       class="w-40 h-40 rounded-full shadow-xl mb-6 object-cover"
+       alt="Şeyma Hilal Yeşildal">
+
+  <h2 class="text-4xl md:text-5xl font-bold mb-4">
+    Computer Engineering Student
+  </h2>
+
+  <p class="text-lg text-gray-600 max-w-xl mb-6">
+    Senior Computer Engineering student experienced in C#, SQL, 
+    object-oriented programming and full-cycle application development.
+  </p>
+
+  <div class="flex gap-6 text-2xl mb-8">
+    <a href="https://github.com/seymahilaly" target="_blank">
+      <i data-feather="github"></i>
     </a>
-  </section>
+    <a href="https://www.linkedin.com/in/seymahilalyesildal/" target="_blank">
+      <i data-feather="linkedin"></i>
+    </a>
+    <a href="mailto:seyma.hilal.y@gmail.com">
+      <i data-feather="mail"></i>
+    </a>
+  </div>
 
-  <!-- About -->
-  <section class="py-20 bg-white text-center px-6">
-    <h2 class="text-3xl font-bold mb-6">Hakkımda</h2>
-    <p class="max-w-2xl mx-auto text-gray-600 leading-relaxed">
-      Web geliştirme alanında kendimi sürekli geliştiriyorum. 
-      React, HTML, CSS ve modern UI tasarımlar üzerine çalışıyorum.
-      Amacım estetik ve performanslı projeler üretmek.
-    </p>
-  </section>
+  <a href="SeymaHilalYesildal_CV.pdf" download
+     class="bg-indigo-600 text-white px-6 py-3 rounded-xl shadow hover:bg-indigo-700 transition">
+    CV İndir
+  </a>
 
-  <!-- Projects -->
-  <section id="projects" class="py-20 bg-gray-100 px-6">
-    <h2 class="text-3xl font-bold text-center mb-12">Projelerim</h2>
-    
-    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      
-      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
-        <h3 class="text-xl font-semibold mb-3">Proje 1</h3>
-        <p class="text-gray-600 mb-4">
-          React ile yapılmış modern bir web uygulaması.
-        </p>
-        <a href="#" class="text-indigo-600 font-medium">GitHub →</a>
-      </div>
+</section>
 
-      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
-        <h3 class="text-xl font-semibold mb-3">Proje 2</h3>
-        <p class="text-gray-600 mb-4">
-          Responsive tasarıma sahip landing page.
-        </p>
-        <a href="#" class="text-indigo-600 font-medium">GitHub →</a>
-      </div>
+<!-- SKILLS -->
+<section class="py-20 bg-white text-center">
+  <h2 class="text-3xl font-bold mb-12">Technical Skills</h2>
 
-      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
-        <h3 class="text-xl font-semibold mb-3">Proje 3</h3>
-        <p class="text-gray-600 mb-4">
-          API entegrasyonu yapılan bir dashboard uygulaması.
-        </p>
-        <a href="#" class="text-indigo-600 font-medium">GitHub →</a>
-      </div>
+  <div class="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
+    <span class="px-6 py-2 bg-indigo-100 rounded-full">C#</span>
+    <span class="px-6 py-2 bg-indigo-100 rounded-full">C / C++</span>
+    <span class="px-6 py-2 bg-indigo-100 rounded-full">PHP</span>
+    <span class="px-6 py-2 bg-indigo-100 rounded-full">MySQL</span>
+    <span class="px-6 py-2 bg-indigo-100 rounded-full">SQL Server</span>
+    <span class="px-6 py-2 bg-indigo-100 rounded-full">HTML</span>
+    <span class="px-6 py-2 bg-indigo-100 rounded-full">CSS</span>
+    <span class="px-6 py-2 bg-indigo-100 rounded-full">JavaScript</span>
+  </div>
+</section>
 
+<!-- PROJECTS -->
+<section id="projects" class="py-20 bg-gray-100 px-6">
+  <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
+
+  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition">
+      <h3 class="text-xl font-semibold mb-3">Movie Search App</h3>
+      <p class="text-gray-600 mb-4">
+        CRUD-based personal application with movie search and favorites system.
+      </p>
+      <a href="https://github.com/seymahilaly" target="_blank"
+         class="text-indigo-600 font-medium">GitHub →</a>
     </div>
-  </section>
 
-  <!-- Contact -->
-  <section class="py-20 bg-white text-center px-6">
-    <h2 class="text-3xl font-bold mb-6">İletişim</h2>
-    <p class="text-gray-600 mb-4">
-      Benimle iletişime geçmek için:
-    </p>
-    <p class="font-medium">email@example.com</p>
-  </section>
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition">
+      <h3 class="text-xl font-semibold mb-3">Survey Upload & QR Converter</h3>
+      <p class="text-gray-600 mb-4">
+        Web application that uploads surveys and converts them into QR codes.
+      </p>
+      <a href="https://github.com/seymahilaly" target="_blank"
+         class="text-indigo-600 font-medium">GitHub →</a>
+    </div>
 
-  <!-- Footer -->
-  <footer class="py-6 bg-gray-900 text-white text-center">
-    © 2026 Seyma Hilaly
-  </footer>
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition">
+      <h3 class="text-xl font-semibold mb-3">Cityseekrs Travel Guide</h3>
+      <p class="text-gray-600 mb-4">
+        Responsive city guide website built using HTML, CSS and JavaScript.
+      </p>
+      <a href="https://github.com/seymahilaly" target="_blank"
+         class="text-indigo-600 font-medium">GitHub →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 bg-white text-center">
+  <h2 class="text-3xl font-bold mb-6">Contact</h2>
+  <p class="text-gray-600 mb-2">Kocaeli / İzmit</p>
+  <p class="text-gray-600 mb-2">📞 0530 271 28 03</p>
+  <p class="font-medium">📧 seyma.hilal.y@gmail.com</p>
+</section>
+
+<footer class="py-6 bg-gray-900 text-white text-center">
+  © 2026 Şeyma Hilal Yeşildal
+</footer>
+
+<script>
+  feather.replace()
+
+  function toggleDark() {
+    document.body.classList.toggle("bg-gray-900")
+    document.body.classList.toggle("text-white")
+  }
+</script>
 
 </body>
 </html>
